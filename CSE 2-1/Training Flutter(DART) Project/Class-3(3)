@@ -1,0 +1,29 @@
+abstract class Person{
+  void talk();
+  void say(){
+    print('Person Class');
+  }
+}
+
+class Student extends Person{
+  int? p;
+  @override
+  void talk(){
+    
+  }
+  @override
+  void say(){
+    print("Student Class");
+  }
+  void f1(){
+    
+  }
+  
+}
+
+void main(){
+//   Student obj = Student();
+  Person obj = Student();
+  obj.say();
+//   obj.f1(); We cann't do this. But why? 
+}
