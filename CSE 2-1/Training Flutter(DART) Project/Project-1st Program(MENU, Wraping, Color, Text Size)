@@ -1,0 +1,44 @@
+import 'package:flutter/material.dart';
+
+void main() {
+  runApp(
+    MaterialApp(
+      debugShowCheckedModeBanner: false,
+      title: 'CSE 14',
+      home: Scaffold(
+        appBar: AppBar(
+          title: Text(
+            'CSE 14',
+            style: TextStyle(
+                fontSize: 20, color: Colors.red, fontWeight: FontWeight.bold),
+          ),
+          actions: [
+            GestureDetector(
+              child: Icon(Icons.menu),
+              onTap: () {
+                print('CSE 14 App');
+              },
+            ),
+            Icon(Icons.person), //GestureDetector
+            // Icon(Icons.menu),
+          ],
+        ),
+        body: Center(
+          child: Container(
+            padding: EdgeInsets.all(20.0),
+            margin: EdgeInsets.all(20.0),
+            color: Colors.orange[50],
+            child: Column(
+              children: [
+                Text('CSE 14'),
+                Text('Name'),
+                Text('Roll'),
+                Text('Reg'),
+              ],
+            ),
+          ),
+        ),
+      ),
+    ),
+  );
+}
