@@ -1,0 +1,9 @@
+class Person{
+  //bool can_do=true;
+  bool? can_do;
+}
+
+void main(){
+  Person p1 = Person();
+  print(p1.can_do);
+}
